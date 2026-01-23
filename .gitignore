@@ -1,0 +1,43 @@
+# ===== Terraform / Terragrunt =====
+**/.terraform/*
+**/.terragrunt-cache/*
+**/.terraform.lock.hcl
+
+# Terraform state (never commit)
+**/*.tfstate
+**/*.tfstate.backup
+**/*.tfstate.*
+
+# Plans
+**/*.tfplan
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Local CLI configs (may contain secrets)
+**/.env
+**/.env.*
+**/secrets.*
+**/*secret*
+**/credentials
+**/config
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+
